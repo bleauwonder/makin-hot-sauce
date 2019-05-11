@@ -1,0 +1,16 @@
+.img-thumbnail {
+    display: block;
+    width: 200px; /* You can set the dimensions to whatever you want */
+    height: 200px;
+    object-fit: cover;
+}
+
+.comp-num {
+    opacity: 1;
+    /* background-image: url("assets/images/Sunset_Clouds.jpg"); */
+    background-size: cover;
+  }
+  
+.comp-num-text {
+    color: green;
+  }

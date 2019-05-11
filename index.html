@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+        <title>Unit 4 Game</title>
+</head>
+<body>
+     <!-- Overall Bootstrap Grid -->
+  <div class="container">
+
+    <!-- Jumbotron with Title -->
+    <div class="jumbotron">
+      <h1 class="text-center">
+        <strong>Crystals Collector!</strong>
+      </h1>
+      <hr>
+      <div id="musicControls" class="text-center">
+        <button class="btn btn-primary btn-xs music-button">
+          <span class="fa fa-music"></span> Singing Crystals</button>
+        <button class="btn btn-dark btn-xs pause-button">
+          <span class="fa fa-pause"></span> Pause Music</button>
+      </div>
+    </div>
+<div class="row">
+        <div class="col-lg-12">
+                <div id="sizeControls" class="card">
+                    <h4 class="card-header">How to Play</h4>
+                        <div class="card-body">
+                            <div class="text-center">
+                                <p>At the start of the game, the Computer will choose a random number.</p>
+                                <p>There are 4 crystals below. Each one will be assigned a certain random number that stays the same for the round. Each one you click will add to the total of your crystal power.</p>
+                                <p>To win, match your total with the Computer's total. To lose, well, go above the computer, thinking you are a more enlightened being.</p>
+                                <p>The value of each crystal is has a dark secret, hence, it is hidden. And each new game, a new dark secret will come to light.</p>
+                            </div>
+                        </div>
+                </div>
+        </div>
+</div>
+
+    <div class="row">
+
+        <div class="col-lg-4">
+            <div class="card comp-num">
+                <h4 class="card-header">Computer Says</h4>
+                <div class="card-body">
+                    <div class="text-center comp-num-text">
+                        <h4><span id="random-counter">0</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="col-lg-4">
+                <div id="player-total" class="card">
+                    <h4 class="card-header">Your Total</h4>
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h4><span id="total-counter">0</span></h4>
+                                <!-- <h4><span id="total-counter font-weight-bold">0</span></h4> -->
+
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+        <div class="col-lg-4">
+            <div id="win-lose" class="card">
+                <h4 class="card-header">Are you Enlightened?</h4>
+                    <div class="card-body">
+                        <div class="text-center">
+                            <h4>Wins: <span id="win-counter">0</span></h4>
+                            <h4>Losses: <span id="loss-counter">0</span></h4>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="row">
+        <div class="col-lg-12">
+          <div id="chooseCrystal" class="card">
+            <h4 class="card-header">Choose a Crystal</h4>
+            <div class="card-body">
+              <div class="text-center">
+                
+                <button class="crystal-btn btn-primary btn-lg">
+                    <span class="fa fa-plus"></span><img id="titanium-quartz" src="assets/images/Titanium-quartz-13_ml.jpg" alt="titanium quartz" class="img-thumbnail"></button>
+                
+                <button class="crystal-btn btn-primary btn-lg">
+                  <span class="fa fa-ok"></span><img id="blue-quartz" src="assets/images/Blue_Quartz.png" alt="blue quartz" class="img-thumbnail"></button>
+                 
+                <button class="crystal-btn btn-primary btn-lg">
+                  <span class="fa fa-minus"></span><img id="quartz" src="assets/images/Quartz.jpg" alt="quartz" class="img-thumbnail"></button>
+                
+                <button class="crystal-btn btn-primary btn-lg">
+                    <span class="fa fa-minus"></span><img id="tanzanite" src="assets/images/tanzanite.jpg" alt="tanzanite" class="img-thumbnail"></button>
+              </div>
+            </div>
+          </div>
+
+     <!-- jQuery -->
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+     <!-- Script -->
+     <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
