@@ -36,12 +36,13 @@ $(document).ready(function() {
       if (didUserWin(compRandom, userTotal)) {
         wins+=1;
         $("#win-counter").html(wins);
+        alert("Congrats! You made a new hot sauce!")
         restartGame();
       }
       else if (userTotal > compRandom) {
         losses+=1;
-        console.log("userTotal", userTotal, "compRandom", compRandom, "losses", losses)
         $("#loss-counter").html(losses);
+        alert("It's okay, we'll keep making our classic style.")
         restartGame();
       }
     })
