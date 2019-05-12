@@ -1,8 +1,6 @@
 
-
-// JavaScript function that wraps everything
 $(document).ready(function() {
-//    setupGame();
+
     // // Link for Game Song
     // var audioElement = document.createElement("audio");
     // audioElement.setAttribute("src", "/assets/Our-Mountain__Looping.mp3");
@@ -26,7 +24,7 @@ $(document).ready(function() {
 
     var compRandom = randomNum(120, 19);
     assignNumbersToCrystals();
-    console.log(compRandom);
+    
     $("#random-counter").html(compRandom);
     $("#total-counter").html(userTotal);
     $(".crystal-btn").on("click", function(e) {
@@ -48,19 +46,14 @@ $(document).ready(function() {
       }
     })
 
-// function for crystals, calling back randomNum and sending it to userTotal
-
-
-// set up game
-
 function assignNumbersToCrystals() {
     var array = ['#titanium-quartz', "#blue-quartz", "#quartz", "#tanzanite"]
-for(var i = 0; i < array.length; i++) {
-    var randnum = randomNum(12, 1)
-    $(array[i]).val(randnum)
+        for(var i = 0; i < array.length; i++) {
+            var randnum = randomNum(12, 1)
+            $(array[i]).val(randnum)
+    }
 }
 
-}
 function restartGame() {
     userTotal = 0;
     compRandom = randomNum(120, 19);
@@ -74,14 +67,11 @@ function didUserWin(compRandom, userTotal) {
         return true;
      } 
     else if (userTotal > compRandom) {
-        
         return false;
     }
     else {
         return false;
+        }
     }
-}
-
-
-})
+});
 
