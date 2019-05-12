@@ -5,30 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps|Rubik" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
         <title>Unit 4 Game</title>
 </head>
 <body class="bg-success">
-  <div class="container py-5 text-center">
+  <div class="container">
 
-    <div class="jumbotron">
+    <div class="jumbotron bg-secondary m-1 pt-2 p-1">
       <h1 class="text-center">
         <strong>Makin' Hot Sauce</strong>
       </h1>
       <hr>
-      <div id="musicControls" class="text-center">
+      <!-- <div id="musicControls" class="text-center">
         <button class="btn btn-success btn-xs music-button">
           <span class="fa fa-music"></span> Saucey Time</button>
         <button class="btn btn-dark btn-xs pause-button">
           <span class="fa fa-pause"></span> Pause</button>
-      </div>
+      </div> -->
     </div>
 <div class="row">
         <div class="col-lg-12">
-                <div id="rules" class="card">
-                    <h4 class="card-header">How to Harvest</h4>
-                        <div class="card-body">
+                <div id="rules" class="card bg-secondary">
+                    <h4 class="card-header text-center">How to Harvest</h4>
+                        <div class="card-body bg-secondary">
                             <div class="text-center">
                                 <p>At the start of the game, the Computer will choose a random number.</p>
                                 <p>There are 4 ingredients below. Each one is be assigned a certain random number that stays the same for the round. Each one you click will add to the total of your ingredients.</p>
@@ -43,8 +44,8 @@
     <div class="row">
 
         <div class="col-lg-4">
-            <div class="card comp-num">
-                <h4 class="card-header">Computer's Hot Sauce</h4>
+            <div class="card comp-num bg-secondary">
+                <h4 class="card-header text-center">Computer's Hot Sauce</h4>
                 <div class="card-body">
                     <div class="text-center comp-num-text">
                         <h4><span id="random-counter">0</span></h4>
@@ -54,8 +55,8 @@
         </div> 
 
         <div class="col-lg-4">
-                <div id="player-total" class="card">
-                    <h4 class="card-header">Your Hot Sauce</h4>
+                <div id="player-total" class="card bg-secondary">
+                    <h4 class="card-header text-center">Your Ingredients</h4>
                         <div class="card-body">
                             <div class="text-center">
                                 <h4><span id="total-counter">0</span></h4>
@@ -66,8 +67,8 @@
             </div>
 
         <div class="col-lg-4">
-            <div id="win-lose" class="card">
-                <h4 class="card-header">How many Hot Sauces?</h4>
+            <div id="win-lose" class="card bg-secondary">
+                <h4 class="card-header text-center">Your Hot Sauces</h4>
                     <div class="card-body">
                         <div class="text-center">
                             <h4>Wins: <span id="win-counter">0</span></h4>
@@ -80,8 +81,8 @@
 
     <div class="row">
         <div class="col-lg-12">
-          <div id="chooseCrystal" class="card">
-            <h2 class="card-header">Choose an Ingredient</h2>
+          <div id="chooseCrystal" class="card bg-secondary">
+            <h2 class="card-header text-center">Choose an Ingredient</h2>
             <div class="card-body">
               <div class="text-center">
                 
@@ -99,6 +100,14 @@
               </div>
             </div>
           </div>
+          <div id="confirm">
+                <div class="message">This is a warning message.</div>
+                <button class="yes">OK</button>
+                <img src = "https://encrypted-tbn0.gstatic.com/images?q=
+                            tbn:ANd9GcSNjyHBjM74KLxvROpx34zsT4zPzMWHMHz4zzJwAtemXGglsjtA"
+                             width="120" height="70"/>
+             </div>
+             <input type="button" value="Click Me" onclick="functionAlert();" />
 
      <!-- jQuery -->
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

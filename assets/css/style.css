@@ -5,11 +5,13 @@
     object-fit: cover;
 }
 
-/* .comp-num {
-    opacity: 1;
-    /* background-image: url("assets/images/Sunset_Clouds.jpg"); 
+.jumbotron {
+    font-family: 'Macondo Swash Caps', cursive;
+    font-size: 100px;
+    opacity: .7;
+    background-image: url("assets/images/Sunset_Clouds.jpg"); 
     background-size: cover;
-  } */
+  }
 
 
 .bg-success {
@@ -17,3 +19,13 @@
     background-size: cover;
     background-attachment: fixed;
 }
+
+.card-header {
+    font-family: 'Macondo Swash Caps', cursive;
+    font-size: 30px;
+}
+
+.card {
+    opacity: .8;
+}
+
