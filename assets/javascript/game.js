@@ -2,16 +2,18 @@
 $(document).ready(function() {
 
     // // Link for Game Song
-    // var audioElement = document.createElement("audio");
-    // audioElement.setAttribute("src", "/assets/Our-Mountain__Looping.mp3");
+    var audioElement = document.createElement("audio");
+    audioElement.setAttribute("src", "/assets/Our-Mountain__Looping.mp3");
 
-    // // Music Button
-    // $(".music-button").on("click", function() {
-    //   audioElement.play();
-    // });
-    // $(".pause-button").on("click", function() {
-    //   audioElement.pause();
-    // });
+    // Music Button
+    var obj = document.createElement("audio");
+  obj.src = "assets/311_All-Mixed-Up.mp3";
+    $(".music-button").click(function() {
+      obj.play();
+    });
+    $(".pause-button").on("click", function() {
+      obj.pause();
+    });
 
     var wins = 0;
     var losses = 0;
@@ -36,13 +38,13 @@ $(document).ready(function() {
       if (didUserWin(compRandom, userTotal)) {
         wins+=1;
         $("#win-counter").html(wins);
-        alert("Congrats! You made a new hot sauce!")
+        alert("Wow! Now that's a spicy mix! Thanks for mixing a new hot sauce!")
         restartGame();
       }
       else if (userTotal > compRandom) {
         losses+=1;
         $("#loss-counter").html(losses);
-        alert("It's okay, we'll keep making our classic style.")
+        alert("You lost! It's okay, we'll keep mixing our classic style.")
         restartGame();
       }
     })
