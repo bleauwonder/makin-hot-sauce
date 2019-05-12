@@ -10,29 +10,31 @@
     <link rel="stylesheet" href="assets/css/style.css">
         <title>Unit 4 Game</title>
 </head>
-<body class="bg-success">
+
+<body>
     <div class="container">
-        <div class="jumbotron bg-secondary m-1 pt-2 p-1">
-        <h1 class="text-center">
-            <strong>Makin' Hot Sauce</strong>
-        </h1>
-        <hr>
-      <div id="musicControls" class="text-center">
-        <button class="btn btn-success btn-xs music-button m-1">
-          <span class="music"></span> Dance Break</button>
-        <button class="btn btn-dark btn-xs pause-button">
-          <span class="pause"></span> Take a Breath</button>
-      </div>
-    </div>
-<div class="row">
-    <div class="col-lg-12">
-                <div id="rules" class="card bg-secondary">
+        <div class="jumbotron m-1 pt-2 p-1 shadow">
+            <h1 class="text-center">
+                <strong>Makin' Hot Sauce</strong>
+            </h1>
+            <div id="musicControls m-1 p-1" class="text-center">
+                <button class="btn btn-success btn-xs music-button m-1">
+                    <span class="music"></span> Dance Break</button>
+                <button class="btn btn-dark btn-xs pause-button">
+                    <span class="pause"></span> Take a Breath</button>
+            </div>
+        </div>
+    
+
+        <div class="row mt-2">
+            <div class="col-lg-12">
+                <div id="rules" class="card shadow">
                     <h4 class="card-header text-center">How to Harvest</h4>
-                        <div class="card-body bg-secondary">
+                        <div class="card-body">
                             <div class="text-center">
                                 <p>At the start of the game, the Computer will choose a random number.</p>
                                 <br>
-                                <p>There are 4 ingredients below. Each one is be assigned a certain random number that stays the same for the round. Each one you click will add to the total of your ingredients.</p>
+                                <p>There are 4 ingredients below. Each one is assigned a certain random number for the round and everytime you click, it will add to the total of your ingredients.</p>
                                 <br>
                                 <p>To win, match your total with the Computer's total. To lose, get just too overly exuberant about harvesting peppers.</p>
                                 <br>
@@ -40,69 +42,69 @@
                             </div>
                         </div>
                 </div>
-        </div>
-</div>
-
-    <div class="row">
-
-        <div class="col-lg-4">
-            <div class="card comp-num bg-secondary">
-                <h4 class="card-header text-center">Computer's Hot Sauce</h4>
-                <div class="card-body">
-                    <div class="text-center comp-num-text">
-                        <h4><span id="random-counter">0</span></h4>
-                    </div>
-                </div>
             </div>
-        </div> 
+        </div>
 
-        <div class="col-lg-4">
-                <div id="player-total" class="card bg-secondary">
+        <div class="row mt-2">
+            <div class="col-lg-4">
+                <div class="card shadow">
+                    <h4 class="card-header text-center">Computer's Hot Sauce</h4>
+                        <div class="card-body">
+                            <div class="text-center comp-num-text">
+                                <h4><span id="random-counter">0</span></h4>
+                            </div>
+                        </div>
+                </div>
+            </div> 
+
+            <div class="col-lg-4">
+                <div id="player-total" class="card shadow">
                     <h4 class="card-header text-center">Mix Your Ingredients</h4>
                         <div class="card-body">
                             <div class="text-center">
                                 <h4><span id="total-counter">0</span></h4>
-
                             </div>
                         </div>
                 </div>
             </div>
 
-        <div class="col-lg-4">
-            <div id="win-lose" class="card bg-secondary">
-                <h4 class="card-header text-center">Your Hot Sauces</h4>
-                    <div class="card-body">
-                        <div class="text-center">
-                            <h4>Wins: <span id="win-counter">0</span></h4>
-                            <h4>Losses: <span id="loss-counter">0</span></h4>
+            <div class="col-lg-4">
+                <div id="win-lose" class="card shadow">
+                    <h4 class="card-header text-center">Your Hot Sauces</h4>
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h4>Wins: <span id="win-counter">0</span></h4>
+                                <h4>Losses: <span id="loss-counter">0</span></h4>
+                            </div>
                         </div>
-                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="row mt-2">
+            <div class="col-lg-12">
+                <div id="choosePepper" class="card shadow">
+                    <h2 class="card-header text-center">Choose an Ingredient</h2>
+                        <div class="card-body">
+                            <div class="text-center">
+                
+                                <button class="crystal-btn btn-lg">
+                                    <span class="one"></span><img id="habanero" src="assets/images/habanero.jpg" alt="img habanero" class="img-thumbnail"></button>
+                
+                                <button class="crystal-btn btn-lg">
+                                    <span class="two"></span><img id="poblano" src="assets/images/poblano.jpg" alt="img poblano" class="img-thumbnail"></button>
+                 
+                                <button class="crystal-btn btn-lg">
+                                    <span class="three"></span><img id="honey" src="assets/images/honey.jpeg" alt="img honey" class="img-thumbnail"></button>
+                
+                                <button class="crystal-btn btn-lg">
+                                    <span class="four"></span><img id="reaper" src="assets/images/reaper.jpeg" alt="img reaper" class="img-thumbnail"></button>
+                            </div>
+                        </div>
+                </div>
             </div>
         </div>
-    </div> 
-
-    <div class="row">
-        <div class="col-lg-12">
-          <div id="chooseCrystal" class="card bg-secondary">
-            <h2 class="card-header text-center">Choose an Ingredient</h2>
-            <div class="card-body">
-              <div class="text-center">
-                
-                <button class="crystal-btn btn-secondary btn-lg">
-                    <span class="fa fa-plus"></span><img id="titanium-quartz" src="assets/images/habanero.jpg" alt="titanium quartz" class="img-thumbnail"></button>
-                
-                <button class="crystal-btn btn-secondary btn-lg">
-                  <span class="fa fa-ok"></span><img id="blue-quartz" src="assets/images/poblano.jpg" alt="blue quartz" class="img-thumbnail"></button>
-                 
-                <button class="crystal-btn btn-secondary btn-lg">
-                  <span class="fa fa-minus"></span><img id="quartz" src="assets/images/honey.jpeg" alt="quartz" class="img-thumbnail"></button>
-                
-                <button class="crystal-btn btn-secondary btn-lg">
-                    <span class="fa fa-minus"></span><img id="tanzanite" src="assets/images/reaper.jpeg" alt="tanzanite" class="img-thumbnail"></button>
-              </div>
-            </div>
-          </div>
-          
+    </div>
 
      <!-- jQuery -->
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -8,26 +8,30 @@
 .jumbotron {
     font-family: 'Macondo Swash Caps', cursive;
     font-size: 100px;
-    opacity: .7; 
+    opacity: .95; 
     background-size: cover;
+    background-color: green;
   }
 
 
-.bg-success {
-    background-image: url("assets/images/rainy-woods.jpg");
+body {
+    background-image: url("../../assets/images/vines.jpg");
     background-size: cover;
     background-attachment: fixed;
+    margin: auto;
 }
 
 .card-header {
     font-family: 'Macondo Swash Caps', cursive;
     font-size: 30px;
+    
 }
 
 .card {
-    opacity: .8;
     font-family: 'Macondo Swash Caps', cursive;
     font-size: 30px;
+    opacity: .9;
+    background-color: rgb(25, 182, 25);
 }
 
 #rules {

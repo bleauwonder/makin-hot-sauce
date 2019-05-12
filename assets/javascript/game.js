@@ -38,7 +38,7 @@ $(document).ready(function() {
       if (didUserWin(compRandom, userTotal)) {
         wins+=1;
         $("#win-counter").html(wins);
-        alert("Wow! Now that's a spicy mix! Thanks for mixing a new hot sauce!")
+        alert("Wow! Now that's a spicy mix! Thanks for creating a new hot sauce!")
         restartGame();
       }
       else if (userTotal > compRandom) {
